@@ -31,6 +31,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd backend
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Collect static files
@@ -50,7 +51,7 @@ jobs:
         with:
           name: python-app
           path: |
-            cd backend/release.zip
+            backend/release.zip
             !venv/
 
   deploy:
