@@ -20,7 +20,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://victorious-river-09d149f03.4.azurestaticapps.net' 
+    'https://lively-sand-026690010.4.azurestaticapps.net' 
 ]
 
 

@@ -3,7 +3,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>We are in:  {import.meta.env.MODE}</div>
+    <div>Welcome to:  {import.meta.env.MODE}</div>
   )
 }
 
