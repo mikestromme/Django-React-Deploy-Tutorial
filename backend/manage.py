@@ -6,8 +6,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    settings_module = 'crud.deployment' if 'WEBSITE_HOSTNAME' in os.environ else 'crud.settings'
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
+    settings_module = 'crud.deployment' if 'WEBSITE_HOSTNAME' in os.environ else 'crud.settings' # used to tell application if in DEV or PROD
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module) # used to tell application if in DEV or PROD
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
